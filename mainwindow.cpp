@@ -9,7 +9,7 @@ MainWindow::MainWindow(QWidget *parent) :
     QMainWindow(parent),
     ui(new Ui::MainWindow)
 {
-    _client = new QMQTT::Client("128.199.191.223", 1883);
+    _client = new QMQTT::Client("iot.eclipse.org", 1883);
 
     _client->setClientId("xxo");
 
